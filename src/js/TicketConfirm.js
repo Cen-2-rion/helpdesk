@@ -39,9 +39,7 @@ class TicketConfirm {
 
   // Добавление обработчиков событий для модального окна
   addModalEventListeners() {
-    this.modal
-      .querySelector(".cancel-btn")
-      .addEventListener("click", () => this.close());
+    this.modal.querySelector(".cancel-btn").addEventListener("click", () => this.close());
     this.modal.querySelector(".ok-btn").addEventListener("click", () => {
       this.onConfirm();
       this.onConfirm = null;
